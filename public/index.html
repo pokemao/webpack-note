@@ -9,5 +9,12 @@
 </head>
 <body>
     <div id="app"></div>
+    <div id="root"></div>
+    <script src="./pokemao/index.js"></script>
+    <!-- ejs模板 -->
+    <% if(process.env.NODE_ENV === "production") { %>
+        <script src="">src里面写lodash的cdn地址</script>
+        <script src="">src里面写dayjs的cdn地址</script>
+    <% } %>
 </body>
 </html>

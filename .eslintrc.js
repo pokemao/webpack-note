@@ -1,9 +1,10 @@
 // 这个文件由npx eslint --init根据选项生成
+// 使用7版本的eslint，8版本的eslint和eslintloader有不兼容
 module.exports = {
     "env": {
         "browser": true,   
         // 支持commonjs
-        "common": true,
+        "commonjs": true,
         "es2021": true
     },
     // 继承其他代码规范的配置信息
@@ -24,7 +25,9 @@ module.exports = {
     "parserOptions": {
         "ecmaVersion": "latest",
         // 支持esmodule
-        "sourceType": "module"
+        "sourceType": "module",
+        // 为eslint指定ts语法解析的config文件地址
+        "project": ["./1/tsconfig.json"]
     },
     "plugins": [],
     "rules": {

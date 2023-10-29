@@ -16,7 +16,7 @@ export const App = () => {
     )
 }
 
-const container = document.getElementById('app')
+const container = document.getElementById('root')
 const root = createRoot(container)
 // 易错点3
 // 注意使用方式是<App>
